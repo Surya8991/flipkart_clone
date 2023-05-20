@@ -3,6 +3,14 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./Header.css";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
+import "tippy.js/themes/light.css";
+import "tippy.js/animations/perspective.css";
+import "tippy.js/animations/scale.css";
+import MoreT from '../MoreT/MoreT';
+import LoginT from "../LoginT/LoginT"
+
 const Header = () => {
   return (
     <div className='header'>
@@ -46,17 +54,21 @@ const Header = () => {
         <SearchIcon />
       </div>
       <div className="third">
-        <button>Login</button>
+        <Tippy content={<LoginT/>} theme='light' interactive={true} offset={[5,18]}>
+          <button>Login</button>
+        </Tippy>
       </div>
       <div className="fourth">
-        <span>
-          More
-        </span>
-        <ExpandMoreIcon/>
+        <Tippy content={<MoreT/>} theme='light' interactive={true} offset={[5,18]}>
+          <span>
+            More
+          </span>
+        </Tippy>
+        <ExpandMoreIcon />
       </div>
       <div className="fifth">
-        <ShoppingCartOutlinedIcon/>
-        <p>Cart</p>
+        <ShoppingCartOutlinedIcon />
+        <p> Cart</p>
       </div>
 
     </div>

@@ -78,6 +78,7 @@
   align-items: center;
   display: flex;
   padding-right: 120px;
+  cursor: pointer;
 }
 .fifth > img {
   cursor: pointer;
