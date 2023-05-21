@@ -14,7 +14,7 @@ const MoreT = () => {
       </div>
       <hr />
       <div className="moret__in">
-        <MonetizationOnIcon/>
+        <MonetizationOnIcon />
         <p>Sell on Flipkart</p>
       </div>
       <hr />
@@ -24,7 +24,7 @@ const MoreT = () => {
       </div>
       <hr />
       <div className="moret__in">
-        <TrendingUpIcon/>
+        <TrendingUpIcon />
         <p>Advertise</p>
       </div>
       <hr />

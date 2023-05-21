@@ -15,10 +15,10 @@ const Header = () => {
   return (
     <div className='header'>
       <div className="first">
-        <img
+        <a href='/'><img
           src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_4ee2f9.png"
           alt="Flipkart Clone"
-        />
+        /></a>
         <div className="first1">
           <span
             style={{
@@ -54,12 +54,12 @@ const Header = () => {
         <SearchIcon />
       </div>
       <div className="third">
-        <Tippy content={<LoginT/>} theme='light' interactive={true} offset={[5,18]}>
+        <Tippy content={<LoginT />} theme='light' interactive={true} offset={[5, 18]}>
           <button>Login</button>
         </Tippy>
       </div>
       <div className="fourth">
-        <Tippy content={<MoreT/>} theme='light' interactive={true} offset={[5,18]}>
+        <Tippy content={<MoreT />} theme='light' interactive={true} offset={[5, 18]}>
           <span>
             More
           </span>
