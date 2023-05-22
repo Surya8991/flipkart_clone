@@ -4,8 +4,8 @@ import Header from './Components/Header/Header.js';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import { Data } from './Data.js';
 import Card from './Components/Card/Card';
-// import { useNavigate } from 'react-router-dom';
-
+// import { Route, Switch, useNavigate } from "react-router-dom";
+// import Navbar from './Components/Navbar.js';
 
 function App() {
   const [category, setCategory] = useState([]);
@@ -37,20 +37,20 @@ function App() {
           filter("sandal");
         }
         // if (command === "cartPage") {
-        //   history.push("/cart");
+        //   navigate("/cart");
         // }
         // if (command === "ordersPage") {
-        //   history.push("/orders");
+        //   navigate("/orders");
         // }
         // if (command === "homePage") {
-        //   history.push("/");
+        //   navigate("/");
         // }
         // End Tags
       }
     });
     filter("")
 
-  }, []);
+  });
 
   const filter = (names) => {
     const filtered = Data.filter((item) => item.name.includes(names));
@@ -61,18 +61,29 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div style={{ display: "flex", flexWrap: "wrap", alignContent: "center", justifyContent: 'center' }}>
-        {category.map((item) => (
-          <Card
-            image={item.image}
-            name={item.name}
-            rating={item.rating}
-            actualPrice={item.actualPrice}
-            offerPrice={item.offerPrice}
-          />
-        ))}
-      </div>
+      {/* <Switch>
+        <Route exact path="/"> */}
+          <Header />
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            {category.map((item) => (
+              <Card
+                image={item.image}
+                name={item.name}
+                rating={item.rating}
+                actualPrice={item.actualPrice}
+                offerPrice={item.offerPrice}
+              />
+            ))}
+          </div>
+        {/* </Route> */}
+
+        {/* <Route exact path="/cart">
+          <Navbar text={"This is Cart Page"} />
+        </Route>
+        <Route exact path="/orders">
+          <Navbar text={"This is Orders Page"} />
+        </Route>
+      </Switch> */}
     </>
   );
 }

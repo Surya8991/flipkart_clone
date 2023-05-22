@@ -23,7 +23,7 @@ const Card = ({ offerPrice, image, name, rating, actualPrice }) => {
   }, [show, carousel]);
 
   return (
-    <div className="card" style={{ border: "2px solid black", margin: "10px", padding: "30px" }}>
+    <div className="card" style={{ border: "1px solid black", margin: "10px", padding: "30px" }}>
       <div className="card__heart">
         <Favorite />
       </div>
