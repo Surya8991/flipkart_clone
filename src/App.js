@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import { Data } from './Data';
 import Card from './Components/Card/Card';
+import Cart from './Components/CartPage/Cart';
 
 function App() {
   const [category, setCategory] = useState([]);
@@ -46,21 +48,32 @@ function App() {
   };
 
   return (
-            <>
-              <Header />
-              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'center' }}>
-                {category.map((item) => (
-                  <Card
-                    key={item.image}
-                    image={item.image}
-                    name={item.name}
-                    rating={item.rating}
-                    actualPrice={item.actualPrice}
-                    offerPrice={item.offerPrice}
-                  />
-                ))}
-              </div>
-            </>
+    <Router>
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home category={category} />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </>
+    </Router>
+  );
+}
+
+function Home({ category }) {
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'center' }}>
+      {category.map((item) => (
+        <Card
+          key={item.image}
+          image={item.image}
+          name={item.name}
+          rating={item.rating}
+          actualPrice={item.actualPrice}
+          offerPrice={item.offerPrice}
+        />
+      ))}
+    </div>
   );
 }
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -9,18 +10,19 @@ import "tippy.js/themes/light.css";
 import "tippy.js/animations/perspective.css";
 import "tippy.js/animations/scale.css";
 import MoreT from '../MoreT/MoreT';
-import LoginT from "../LoginT/LoginT"
-// import Cart from '../CartPage/Cart';
-// import { Link } from 'react-router-dom';
+import LoginT from "../LoginT/LoginT";
+import Cart from '../CartPage/Cart';
 
 const Header = () => {
   return (
     <div className='header'>
       <div className="first">
-        <a href='/'><img
-          src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_4ee2f9.png"
-          alt="Flipkart Clone"
-        /></a>
+        <a href='/'>
+          <img
+            src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_4ee2f9.png"
+            alt="Flipkart Clone"
+          />
+        </a>
         <div className="first1">
           <span
             style={{
@@ -52,7 +54,7 @@ const Header = () => {
         </div>
       </div>
       <div className="second">
-        <input type="text" placeholder="Search for products,brands and more" />
+        <input type="text" placeholder="Search for products, brands and more" />
         <SearchIcon />
       </div>
       <div className="third">
@@ -69,12 +71,13 @@ const Header = () => {
         <ExpandMoreIcon />
       </div>
       <div className="fifth">
-        <ShoppingCartOutlinedIcon />
-        <p> Cart</p>
+        <Link to="/cart">
+          <ShoppingCartOutlinedIcon />
+          <span>Cart</span>
+        </Link>
       </div>
-
     </div>
   )
 }
 
-export default Header
+export default Header;

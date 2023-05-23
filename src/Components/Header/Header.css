@@ -86,6 +86,9 @@
   padding: 10px;
 }
 
+.fifth >a{
+  text-decoration: none;
+}
 .moret__in,
 .login__in {
   width: 13.5rem;
