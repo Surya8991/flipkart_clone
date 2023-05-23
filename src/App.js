@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import { Data } from './Data';
-import Home from './Components/Home';
+import Home from './Components/Home/Home';
 import Cart from './Components/CartPage/Cart';
 
 function App() {
