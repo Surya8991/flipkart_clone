@@ -10,6 +10,8 @@ import "tippy.js/animations/perspective.css";
 import "tippy.js/animations/scale.css";
 import MoreT from '../MoreT/MoreT';
 import LoginT from "../LoginT/LoginT"
+// import Cart from '../CartPage/Cart';
+// import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
