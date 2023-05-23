@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import "./Header.css";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import "tippy.js/animations/perspective.css";
 import "tippy.js/animations/scale.css";
+
+// files imports
+import "./Header.css";
 import MoreT from '../MoreT/MoreT';
 import LoginT from "../LoginT/LoginT";
-import Cart from '../CartPage/Cart';
 
 const Header = () => {
   return (

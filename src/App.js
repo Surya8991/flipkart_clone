@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import { Data } from './Data';
-import Card from './Components/Card/Card';
+import Home from './Components/Home';
 import Cart from './Components/CartPage/Cart';
 
 function App() {
@@ -57,23 +57,6 @@ function App() {
         </Routes>
       </>
     </Router>
-  );
-}
-
-function Home({ category }) {
-  return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'center' }}>
-      {category.map((item) => (
-        <Card
-          key={item.image}
-          image={item.image}
-          name={item.name}
-          rating={item.rating}
-          actualPrice={item.actualPrice}
-          offerPrice={item.offerPrice}
-        />
-      ))}
-    </div>
   );
 }
 
