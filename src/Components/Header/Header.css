@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2px 0px;
+  padding: 10px 0px;
 }
 .first {
   padding-right: -100px;
@@ -74,19 +74,21 @@
   font-weight: 600;
 }
 .fifth {
-  color: white;
+  
   align-items: center;
   display: flex;
   padding-right: 120px;
   cursor: pointer;
 }
 .fifth > img {
+  color: white;
   cursor: pointer;
   width: 20px;
   padding: 10px;
 }
 
-.fifth >a{
+.fifth > a {
+  color: white;
   text-decoration: none;
 }
 .moret__in,
