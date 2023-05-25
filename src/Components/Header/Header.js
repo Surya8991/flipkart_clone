@@ -14,7 +14,11 @@ import "./Header.css";
 import MoreT from '../MoreT/MoreT';
 import LoginT from "../LoginT/LoginT";
 
-const Header = () => {
+const Header = ({ onSearch }) => {
+  const handleSearchInputChange = (event) => {
+    onSearch(event.target.value);
+  };
+
   return (
     <div className='header'>
       <div className="first">
@@ -55,7 +59,7 @@ const Header = () => {
         </div>
       </div>
       <div className="second">
-        <input type="text" placeholder="Search for products, brands and more" />
+        <input type="text" placeholder="Search for products, brands and more" onChange={handleSearchInputChange} />
         <SearchIcon />
       </div>
       <div className="third">

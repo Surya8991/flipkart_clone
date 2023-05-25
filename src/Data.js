@@ -14,7 +14,7 @@ export const Data = [
     offerPrice: 8799,
     actualPrice: "10,999",
     rating: 5,
-    name: "shoe",
+    name: "Puma shoe",
     image: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQr0o26TvhoSTuIInD4n2xzVAqkTgG29bsWTs-Cmav5yxJUt785PM4P98uCFA&usqp=CAc",
       "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/192781/01/sv01/fnd/PNA/fmt/png/Uproar-Charlotte-ASG-Fade-Basketball-Shoes",
@@ -97,7 +97,7 @@ export const Data = [
     offerPrice: 3599,
     actualPrice: "11,299",
     rating: 2,
-    name: "short",
+    name: "Men short",
     image: [
       "https://contents.mediadecathlon.com/p827233/e1718060df09a80062c720d80d1fa465/p827233.jpg?f=650x650&format=auto",
     ],
@@ -305,15 +305,6 @@ export const Data = [
     rating: 4,
     name: "shirt",
     image: ["https://cdn.andamen.com/media/catalog/product/0/1/01_9_43.jpg"],
-  },
-  {
-    offerPrice: 6999,
-    actualPrice: "10,799",
-    rating: 3,
-    name: "shirt",
-    image: [
-      "https://cdn.shopclues.com/images1/thumbnails/98477/320/320/144857292-98477886-1580365831.jpg",
-    ],
   },
   {
     offerPrice: 8999,

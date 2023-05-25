@@ -8,6 +8,7 @@ import Cart from './Components/CartPage/Cart';
 
 function App() {
   const [category, setCategory] = useState([]);
+  const [searchInput, setSearchInput] = useState('');
 
   useEffect(() => {
     alanBtn({
@@ -43,14 +44,18 @@ function App() {
 
   const filter = (names) => {
     const filtered = Data.filter((item) => item.name.includes(names));
-    console.log(filtered);
     setCategory(filtered);
+  };
+
+  const handleSearchInputChange = (event) => {
+    setSearchInput(event.target.value);
+    filter(event.target.value);
   };
 
   return (
     <Router>
       <>
-        <Header />
+        <Header onSearch={filter} />
         <Routes>
           <Route path="/" element={<Home category={category} />} />
           <Route path="/cart" element={<Cart />} />
