@@ -12,6 +12,10 @@
   height: 100px;
   object-fit: contain;
 }
+.card__image:hover{
+ scale: 1.2;
+}
+
 .card__heart {
   float: right;
   color: lightgray;
@@ -53,7 +57,7 @@
 }
 .card:hover .productDet {
   transition: 0.5s;
-  transform: translateY(-20%);
+  transform: translateY(-10%);
 }
 .addbtn {
   margin: 5px;

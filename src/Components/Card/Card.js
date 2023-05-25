@@ -28,7 +28,7 @@ const Card = ({ offerPrice, image, name, rating, actualPrice }) => {
   return (
     <div
       className="card"
-      style={{ border: "1px solid black", margin: "10px", padding: "20px" }}
+      style={{ border: "1px solid black", margin: "10px", padding: "28px" }}
     >
       <div className="card__heart">
         <Favorite
