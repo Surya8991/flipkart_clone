@@ -43,7 +43,9 @@ function App() {
   }, []);
 
   const filter = (names) => {
-    const filtered = Data.filter((item) => item.name.includes(names));
+    const filtered = Data.filter((item) =>
+      item.name.toLowerCase().includes(names.toLowerCase())
+    );
     setCategory(filtered);
   };
 
