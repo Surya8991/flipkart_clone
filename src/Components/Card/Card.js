@@ -28,7 +28,7 @@ const Card = ({ offerPrice, image, name, rating, actualPrice }) => {
   return (
     <div
       className="card"
-      style={{ border: "1px solid black", margin: "10px", padding: "28px" }}
+      style={{ border: "1px solid black", margin: "10px", padding: "45px" }}
     >
       <div className="card__heart">
         <Favorite
@@ -51,6 +51,7 @@ const Card = ({ offerPrice, image, name, rating, actualPrice }) => {
           <p>
             {name} Brand <span> <b> Size :</b> 6,7,8,9</span>
           </p>
+          <p>Ratings: {rating} ⭐</p>
           <span className="span1">₹{offerPrice}</span>
           <span className="span2">₹{actualPrice}</span>
           <span className="span3">56%</span>

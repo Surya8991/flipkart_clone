@@ -20,7 +20,7 @@ const Header = ({ onSearch }) => {
   };
 
   return (
-    <div className='header'>
+    <div className='header' style={{ position: 'sticky', top: 0 }}>
       <div className="first">
         <a href='/'>
           <img
