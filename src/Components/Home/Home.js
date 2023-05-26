@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../Card/Card';
 function Home({ category }) {
     return (
+        <>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignContent: 'center', marginTop: "20px" }}>
             {category.map((item) => (
                 <Card
@@ -14,6 +15,7 @@ function Home({ category }) {
                 />
             ))}
         </div>
+        </>
     );
 }
 
