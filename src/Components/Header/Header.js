@@ -20,7 +20,7 @@ const Header = ({ onSearch }) => {
   };
 
   return (
-    <div className='header' style={{ position: 'sticky', top: 0 }}>
+    <div className='header' style={{ position: 'sticky', top: 0 ,marginBottom:"20px"}}>
       <div className="first">
         <a href='/'>
           <img
@@ -67,6 +67,9 @@ const Header = ({ onSearch }) => {
           <button>Login</button>
         </Tippy>
       </div>
+        <div className='six'>
+          <button>Become a Seller</button>
+        </div>
       <div className="fourth">
         <Tippy content={<MoreT />} theme='light' interactive={true} offset={[5, 18]}>
           <span>
