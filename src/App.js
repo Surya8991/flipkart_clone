@@ -54,6 +54,9 @@ function App() {
     filter(event.target.value);
   };
 
+  // To fix the waring to host
+  console.log(searchInput);
+  console.log(handleSearchInputChange);
   return (
     <Router>
       <>
