@@ -6,7 +6,7 @@ import './Carousell.css'; // Import a CSS file to define styles
 const Carousell = () => {
   return (
     <div className="carousel-container"> {/* Parent container */}
-      <Carousel showArrows={true} width={1000} autoPlay={true} showThumbs={false}>
+      <Carousel showArrows={true} width={1200} autoPlay={true} showThumbs={false}>
         <div>
           <img className='carousel-img' src="https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202101/flipkart_sale_banner.jpg" height={250} alt='images' />
           <p className="legend">Flipkart Sale is Live 😍</p>
