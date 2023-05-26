@@ -62,13 +62,14 @@ const Header = ({ onSearch }) => {
         <input type="text" placeholder="Search for products, brands and more" onChange={handleSearchInputChange} />
         <SearchIcon />
       </div>
-      <div className="third">
-        <Tippy content={<LoginT />} theme='light' interactive={true} offset={[5, 18]}>
-          <button>Login</button>
-        </Tippy>
-      </div>
       <div className='six'>
         <button>Become a Seller</button>
+      </div>
+      <div className="fifth">
+        <Link to="/cart">
+          <ShoppingCartOutlinedIcon />
+          <span>Cart</span>
+        </Link>
       </div>
       <div className="fourth">
         <Tippy content={<MoreT />} theme='light' interactive={true} offset={[5, 18]}>
@@ -78,11 +79,10 @@ const Header = ({ onSearch }) => {
         </Tippy>
         <ExpandMoreIcon />
       </div>
-      <div className="fifth">
-        <Link to="/cart">
-          <ShoppingCartOutlinedIcon />
-          <span>Cart</span>
-        </Link>
+      <div className="third">
+        <Tippy content={<LoginT />} theme='light' interactive={true} offset={[5, 18]}>
+          <button>Login</button>
+        </Tippy>
       </div>
     </div>
   )
